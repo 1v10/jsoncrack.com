@@ -10,7 +10,6 @@ import { JSONCrackLogo } from "src/layout/JsonCrackLogo";
 import { gaEvent } from "src/lib/utils/gaEvent";
 import useFile from "src/store/useFile";
 import useModal from "src/store/useModal";
-import { AccountMenu } from "./AccountMenu";
 import { FileMenu } from "./FileMenu";
 import { Logo } from "./Logo";
 import { OptionsMenu } from "./OptionsMenu";

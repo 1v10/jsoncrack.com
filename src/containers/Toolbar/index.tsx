@@ -79,35 +79,6 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
           </Styles.StyledToolElement>
         </Group>
       )}
-      <Group gap="xs" justify="right" w="100%" style={{ flexWrap: "nowrap" }}>
-        {!isWidget && (
-          <Styles.StyledToolElement
-            onClick={() => {
-              setSeenPremium(true);
-              setVisible("upgrade")(true);
-              gaEvent("Toolbar", "click upgrade premium");
-            }}
-          >
-            <Indicator
-              size={5}
-              color="green"
-              position="top-start"
-              processing
-              disabled={seenPremium}
-            >
-              <Text
-                display="flex"
-                c="teal"
-                fz="xs"
-                fw={600}
-                style={{ textAlign: "center", gap: 4 }}
-              >
-                <AiFillGift size="18" />
-                Get Premium!
-              </Text>
-            </Indicator>
-          </Styles.StyledToolElement>
-        )}
 
         <SearchInput />
         {!isWidget && (

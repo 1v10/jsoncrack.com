@@ -21,38 +21,6 @@ export const AccountMenu = () => {
           </Avatar>
         </Styles.StyledToolElement>
       </Menu.Target>
-      <Menu.Dropdown>
-        {user ? (
-          <Menu.Item
-            leftSection={<Avatar color="indigo" alt={username} size={20} radius="xl" />}
-            onClick={() => setVisible("account")(true)}
-            closeMenuOnClick
-          >
-            <Text size="xs">{username ?? "Account"}</Text>
-          </Menu.Item>
-        ) : (
-          <a href="https://app.jsoncrack.com/sign-in">
-            <Menu.Item leftSection={<VscSignIn />}>
-              <Text size="xs">Sign in</Text>
-            </Menu.Item>
-          </a>
-        )}
-        {user && (
-          <>
-            <Menu.Divider />
-            <Menu.Item
-              leftSection={<VscFeedback />}
-              onClick={() => setVisible("review")(true)}
-              closeMenuOnClick
-            >
-              <Text size="xs">Feedback</Text>
-            </Menu.Item>
-            <Menu.Item leftSection={<VscSignOut />} onClick={() => logout()} closeMenuOnClick>
-              <Text size="xs">Log out</Text>
-            </Menu.Item>
-          </>
-        )}
-      </Menu.Dropdown>
     </Menu>
   );
 };

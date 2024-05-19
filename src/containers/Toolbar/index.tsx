@@ -46,10 +46,7 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
       {isWidget && <Logo />}
       {!isWidget && (
         <Group gap="xs" justify="left" w="100%" style={{ flexWrap: "nowrap" }}>
-          <Styles.StyledToolElement title="JSON Crack">
-            <Flex gap="xs" align="center" justify="center">
-              <JSONCrackLogo fontSize="1.2em" />
-            </Flex>
+          <Styles.StyledToolElement title="XML View">
           </Styles.StyledToolElement>
 
           <Select

@@ -82,7 +82,6 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
               <FiDownload size="18" />
             </Styles.StyledToolElement>
             <ZoomMenu />
-            <AccountMenu />
             <OptionsMenu />
             <Styles.StyledToolElement
               title="Fullscreen"

@@ -56,8 +56,7 @@ const EditorPage = () => {
   return (
     <>
       <Head>
-        <title>Editor | JSON Crack</title>
-        <link rel="canonical" href="https://jsoncrack.com/editor" />
+        <title>XML View</title>
       </Head>
       <ThemeProvider theme={darkmodeEnabled ? darkTheme : lightTheme}>
         <QueryClientProvider client={queryClient}>

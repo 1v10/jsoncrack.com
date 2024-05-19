@@ -33,17 +33,8 @@ export const NodeModal = ({ opened, onClose }: ModalProps) => {
             <CodeHighlight code={nodeData} miw={350} maw={600} language="json" withCopyButton />
           </ScrollArea.Autosize>
         </Stack>
-        <Button
-          onClick={() => {
-            setVisible("upgrade")(true);
-            gaEvent("Node Modal", "edit");
-          }}
-          rightSection={<VscLock strokeWidth={0.5} />}
-        >
-          Edit
-        </Button>
         <Text fz="sm" fw={700}>
-          JSON Path
+          Node Path
         </Text>
         <ScrollArea.Autosize maw={600}>
           <CodeHighlight

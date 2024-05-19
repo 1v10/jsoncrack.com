@@ -46,11 +46,9 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
       {isWidget && <Logo />}
       {!isWidget && (
         <Group gap="xs" justify="left" w="100%" style={{ flexWrap: "nowrap" }}>
-          <Styles.StyledToolElement title="XML View">
-          </Styles.StyledToolElement>
 
           <Select
-            defaultValue="json"
+            defaultValue="xml"
             size="xs"
             value={format}
             onChange={e => setFormat(e as FileFormat)}

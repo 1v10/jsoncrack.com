@@ -66,7 +66,6 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
 
           <FileMenu />
           <ViewMenu />
-          <ToolsMenu />
         </Group>
       )}
 

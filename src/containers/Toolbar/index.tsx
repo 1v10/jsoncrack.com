@@ -48,7 +48,7 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
         <Group gap="xs" justify="left" w="100%" style={{ flexWrap: "nowrap" }}>
 
           <Select
-            defaultValue="xml"
+            defaultValue="XML"
             size="xs"
             value={format}
             onChange={e => setFormat(e as FileFormat)}

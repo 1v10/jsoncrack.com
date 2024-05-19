@@ -92,7 +92,6 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
             </Styles.StyledToolElement>
           </>
         )}
-      </Group>
     </Styles.StyledTools>
   );
 };

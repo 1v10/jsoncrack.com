@@ -69,9 +69,6 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
           <FileMenu />
           <ViewMenu />
           <ToolsMenu />
-          <Styles.StyledToolElement title="Cloud" onClick={() => setVisible("cloud")(true)}>
-            Cloud
-          </Styles.StyledToolElement>
         </Group>
       )}
 

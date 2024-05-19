@@ -40,11 +40,7 @@ export const Toolbar = ({ isWidget = false }: ToolbarProps) => {
     key: "seenPremium",
     defaultValue: false,
   });
-  
-  useEffect(() => {
-    setFormat(FileFormat.XML);
-  }, [setFormat]);
-  
+
   return (
     <Styles.StyledTools>
       {isWidget && <Logo />}
